@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>哔哩哔哩弹幕视频网 - ( ゜- ゜)つロ  乾杯~  - bilibili</title>
+    <link rel="stylesheet" href="css/b.css"/>
+    <script type="text/javascript" src="js/lunbo.js"></script>
+    <script type="text/javascript" src="../jQuery/js/jquery-3.1.0.min.js"></script>
+</head>
+<body>
+<header class="h-top">
+    <div class="h-bg">
+        <div class="ht-top">
+            <div class="ht-bg"></div>
+            <div class="ht-bgc"></div>
+        </div>
+        <div class="h-m">
+            <div class="h-left">
+                <ul>
+                    <li class="home">
+                        <a class="i-link" href=""><span>主站</span></a>
+                    </li>
+                    <li class="hbili"><a class="i-link" href="/" title="画友">画友</a></li>
+                    <li class="b-gc" id="pgame">
+                        <a class="i-link" href="" title="游戏中心">游戏中心</a>
+                        <div class="game" id="game" style="display: none;"><iframe src="游戏.html" width="100%" height="100%"></iframe></div>
+                    </li>
+                    <li class="live" id="plive">
+                        <a class="i-link" href="" title="直播">直播</a>
+                        <div class="stream" id="stream" style="display: none;"><iframe src="直播.html" width="100%" height="100%"></iframe></div>
+                    </li>
+                    <li class="b-zb"><a class="i-link"  href="" title="周边">周边</a></li>
+                    <li class="b-ml"><a class="i-link"  href="" title="BML">BML<em class="new"></em></a></li>
+
+                </ul>
+            </div>
+            <div class="h-right">
+                <ul class="menu">
+                    <li class="u-li1" style="display: list-item;">
+                        <a class="i-link" href=""><span>登录</span></a>|<a class="i-link" href=""><span>注册</span></a>
+                    </li>
+                    <li class="u-li2" id="tou">
+                        <a class="i-link" href="">投 稿</a>
+                        <ul class="s-menu" id="s-menu">
+                            <li><a href="" ><i class="vp"></i><em>视频投稿</em></a></li>
+                            <li><a href="" ><i class="vm"></i><em>投稿管理</em></a></li>
+                            <li><a href="" ><i class="vc"></i><em>创作中心</em></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="header" style="background-image: url('img/top.png');">
+    <div class="header-layer" id="logo"></div>
+    <div class="header-center">
+        <a href="/" class="logo" style="background-image: url('img/bilibili.png');"></a>
+        <div class="banner-title" id="bilibili">哔哩哔哩弹幕视频网 - ( ゜- ゜)つロ 乾杯~ - bilibili</div>
+    </div>
+    <div class="num">
+        <div class="menu-wrapper">
+            <ul class="nav-menu">
+                <li class="m-i home"><a class="i-link" href=""><em>首页</em></a></li>
+                <li class="m-i">
+                    <a class="i-link" href=""><em>动画</em><div class="v-num"><span>208</span></div></a>
+                    <ul class="i_num">
+                        <li><a href=""><b>MAD·AMV<em></em></b></a></li>
+                        <li><a href=""><b>MMD·3D<em></em></b></a></li>
+                        <li><a href=""><b>短片·手书·配音<em></em></b></a></li>
+                        <li><a href=""><b>综合<em></em></b></a></li>
+                    </ul>
+                </li>
+                <li class="m-i">
+                    <a class="i-link" href=""><em>番剧</em><div class="v-num"><span>47</span></div></a>
+                    <ul class="i_num">
+                        <li><a href=""><b>连载动画<em></em></b></a></li>
+                        <li><a href=""><b>完结动画<em></em></b></a></li>
+                        <li><a href=""><b>资讯<em></em></b></a></li>
+                        <li><a href=""><b>官方延伸<em></em></b></a></li>
+                        <li><a href=""><b>国产动画<em></em></b></a></li>
+                        <li><a href=""><b>新番Index<em></em></b></a></li>
+                    </ul>
+                </li>
+                <li class="m-i">
+                    <a class="i-link" href=""><em>音乐</em><div class="v-num"><span>353</span></div></a>
+                    <ul class="i_num">
+                        <li><a href=""><b>原创音乐<em></em></b></a></li>
+                        <li><a href=""><b>翻唱<em></em></b></a></li>
+                        <li><a href=""><b>VOCALOID·UTAU<em></em></b></a></li>
+                        <li><a href=""><b>演奏<em></em></b></a></li>
+                        <li><a href=""><b>三次元音乐<em></em></b></a></li>
+                        <li><a href=""><b>OP/ED/OST<em></em></b></a></li>
+                        <li><a href=""><b>音乐选集<em></em></b></a></li>
+                    </ul>
+                </li>
+                <li class="m-i">
+                    <a class="i-link" href=""><em>舞蹈</em><div class="v-num"><span>40</span></div></a>
+                    <ul class="i_num">
+                        <li><a href=""><b>宅舞<em></em></b></a></li>
+                        <li><a href=""><b>三次元舞蹈<em></em></b></a></li>
+                        <li><a href=""><b>舞蹈教程<em></em></b></a></li>
+                    </ul>
+                </li>
+                <li class="m-i">
+                    <a class="i-link" href=""><em>游戏</em><div class="v-num"><span>999+</span></div></a>
+                    <ul class="i_num">
+                        <li><a href=""><b>单机联机<em></em></b></a></li>
+                        <li><a href=""><b>网游·电竞<em></em></b></a></li>
+                        <li><a href=""><b>音游<em></em></b></a></li>
+                        <li><a href=""><b>Mugen<em></em></b></a></li>
+                        <li><a href=""><b>GMV<em></em></b></a></li>
+                    </ul>
+                </li>
+                <li class="m-i">
+                    <a class="i-link" href=""><em>科技</em><div class="v-num"><span>412</span></div></a>
+                        <ul class="i_num">
+                        <li><a href=""><b>纪录片<em></em></b></a></li>
+                        <li><a href=""><b>趣味科普人文<em></em></b></a></li>
+                        <li><a href=""><b>野生技术协会<em></em></b></a></li>
+                        <li><a href=""><b>演讲·公开课<em></em></b></a></li>
+                        <li><a href=""><b>星海<em></em></b></a></li>
+                        <li><a href=""><b>数码<em></em></b></a></li>
+                        <li><a href=""><b>机械<em></em></b></a></li>
+                    </ul>
+                </li>
+                <li class="m-i">
+                    <a class="i-link" href=""><em>生活</em><div class="v-num"><span>739</span></div></a>
+                    <ul class="i_num">
+                        <li><a href=""><b>搞笑<em></em></b></a></li>
+                        <li><a href=""><b>日常<em></em></b></a></li>
+                        <li><a href=""><b>美食圈<em></em></b></a></li>
+                        <li><a href=""><b>动物圈<em></em></b></a></li>
+                        <li><a href=""><b>手工<em></em></b></a></li>
+                        <li><a href=""><b>绘画<em></em></b></a></li>
+                        <li><a href=""><b>运动<em></em></b></a></li>
+                    </ul>
+                </li>
+                <li class="m-i">
+                    <a class="i-link" href=""><em>鬼畜</em><div class="v-num"><span>43</span></div></a>
+                    <ul class="i_num">
+                        <li><a href=""><b>鬼畜调教<em></em></b></a></li>
+                        <li><a href=""><b>音MAD<em></em></b></a></li>
+                        <li><a href=""><b>人力VOCALOID<em></em></b></a></li>
+                        <li><a href=""><b>教程演示<em></em></b></a></li>
+                    </ul>
+                </li>
+                <li class="m-i">
+                    <a class="i-link" href=""><em>时尚</em><div class="v-num"><span>144</span></div></a>
+                    <ul class="i_num">
+                        <li><a href=""><b>美妆<em></em></b></a></li>
+                        <li><a href=""><b>服饰<em></em></b></a></li>
+                        <li><a href=""><b>健身<em></em></b></a></li>
+                        <li><a href=""><b>资讯<em></em></b></a></li>
+                    </ul>
+                </li>
+                <li class="m-i">
+                    <a class="i-link" href=""><em>广告</em><div class="v-num"><span>39</span></div></a>
+                </li>
+                <li class="m-i">
+                    <a class="i-link" href=""><em>娱乐</em><div class="v-num"><span>577</span></div></a>
+                    <ul class="i_num">
+                        <li><a href=""><b>综艺<em></em></b></a></li>
+                        <li><a href=""><b>明星<em></em></b></a></li>
+                        <li><a href=""><b>Korea相关<em></em></b></a></li>
+                    </ul>
+                </li>
+                <li class="m-i">
+                    <a class="i-link" href=""><em>影视</em><div class="v-num"><span>533</span></div></a>
+                    <ul class="i_num">
+                        <li><a href=""><b>电影<em></em></b></a></li>
+                        <li><a href=""><b>电视剧<em></em></b></a></li>
+                    </ul>
+                </li>
+                <li class="m-i m-i-square">
+                    <a class="i-link" href=""><em class="em1">广场</em></a>
+                    <div class="i_num">
+                        <ul>
+                            <li><a href="" class="ab"><span class="b-icon1"></span><b>活动中心</b></a></li>
+                            <li><a href="" class="ab"><span class="b-icon2"></span><b>游戏中心</b></a></li>
+                            <li><a href="" class="ab"><span class="b-icon3"></span><b>画友</b></a></li>
+                            <li><a href="" class="ab"><span class="b-icon4"></span><b>芒果TV</b></a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="m-i m-i-live">
+                    <a class="i-link" href=""><em class="em2">直播</em></a>
+                    <ul class="i_num">
+                        <li><a href=""><b>萌宅推荐<em></em></b></a></li>
+                        <li><a href=""><b>手机直播<em></em></b></a></li>
+                        <li><a href=""><b>绘画专区<em></em></b></a></li>
+                        <li><a href=""><b>唱见舞见<em></em></b></a></li>
+                        <li><a href=""><b>御宅文化<em></em></b></a></li>
+                        <li><a href=""><b>生活娱乐<em></em></b></a></li>
+                        <li><a href=""><b>单机联机<em></em></b></a></li>
+    <li><a href=""><b>网络游戏<em></em></b></a></li>
+    <li><a href=""><b>电子竞技<em></em></b></a></li>
+    <li><a href=""><b>手游直播<em></em></b></a></li>
+    <li><a href=""><b>放映厅<em></em></b></a></li>
+    </ul>
+    </li>
+    </ul>
+            <div class="menu-r">
+                <a class="random" href="" title="可达鸭"><div><img src="img/ya.gif" alt="可达鸭"></div></a><a href=""></a>
+                <a class="mobile-p" href=""><div class="mobile-p-box"><div class="mobile-p-qrcode"></div></div></a>
+            </div>
+            <div class="search">
+                <form action="" id="searchform">
+                    <input name="keyword" type="text"  placeholder="真•招生办的阴谋" >
+                    <button type="submit"></button>
+                </form>
+                <a class="paihang" href=""><span>排行榜</span></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="">
+<div class="div-width div1">
+    <div class="d-left">
+        <div id="dd">
+            <div id="tu">
+                <ul>
+                    <li><a href=""><img src="img/tu1.webp" alt=""/></a></li>
+                    <li><a href=""><img src="img/tu2.webp" alt=""/></a></li>
+                    <li><a href=""><img src="img/tu3.webp" alt=""/></a></li>
+                    <li><a href=""><img src="img/tu4.webp" alt=""/></a></li>
+                    <li><a href=""><img src="img/tu5.webp" alt=""/></a></li>
+                    <li><a href=""><img src="img/tu1.webp" alt=""/></a></li>
+                </ul>
+            </div>
+            <div class="paganation" id="paganation">
+                <span class ="selected">1</span>
+                <span>2</span>
+                <span>3</span>
+                <span>4</span>
+                <span>5</span>
+            </div>
+            <a class="gengduo" href="" >更多<b class="dayu">></b></a>
+        </div>
+    </div>
+    <div class="d-right">
+        <div class="top-list-wrapper" id="page">
+            <ul class="top-list">
+                <li>
+                    <div class="v-item">
+                        <a href="" title="【1080P无LOGO版本】 韵动中国1-3合集 CHINA IN MOTION（2013-2015）">
+                            <div class="preview">
+                                <img src="img/pian1.webp">
+                            </div>
+                            <div class="info">
+                                <div class="t">【1080P无LOGO版本】 韵动中国1-3合集 CHINA IN MOTION（2013-2015）</div>
+                                <p class="up">up主：梵天成天翔独眼竜</p>
+                                <p class="play">播放：27321</p>
+                            </div></a>
+                    </div>
+                </li>
+                <li>
+                    <div class="v-item">
+                        <a href="" title="【APHMMD】Tokio·Funka">
+                            <div class="preview">
+                                <img src="img/pian2.webp">
+                            </div>
+                        <div class="info">
+                            <div class="t">【APHMMD】Tokio·Funka</div>
+                            <p class="up">up主：慕少商</p>
+                            <p class="play">播放：8962</p>
+                        </div></a></div>
+                </li>
+                <li>
+                    <div class="v-item">
+                        <a href="" title="【全职高手】【浅谈】部分人物性格分析报告">
+                            <div class="preview">
+                                <img src="img/pian3.webp">
+                            </div>
+                            <div class="info">
+                                <div class="t">【全职高手】【浅谈】部分人物性格分析报告</div>
+                                <p class="up">up主：涤非</p>
+                                <p class="play">播放：24002</p>
+                            </div></a></div>
+                </li>
+                <li>
+                    <div class="v-item">
+                        <a href="" title="【刘醒】吔总会之歌">
+                            <div class="preview">
+                                <img src="img/pian4.webp">
+                            </div>
+                           <div class="info">
+                               <div class="t">【刘醒】吔总会之歌</div>
+                               <p class="up">up主：OELoop</p>
+                               <p class="play">播放：95338</p>
+                           </div></a></div>
+                </li>
+                <li>
+                    <div class="v-item">
+                        <a href="" title="【MMD】【看不到胖次系列】【猫耳天依】歌唱吧，少男少女们！">
+                            <div class="preview">
+                                <img src="img/pian5.webp">
+                            </div>
+                            <div class="info">
+                                <div class="t">【MMD】【看不到胖次系列】【猫耳天依】歌唱吧，少男少女们！</div>
+                                <p class="up">up主：FantasyRangers</p>
+                                <p class="play">播放：11908</p>
+                            </div></a></div>
+                </li>
+                <li>
+                    <div class="v-item">
+                        <a href="" title="【小魂】明月天涯">
+                            <div class="preview">
+                                <img src="img/pian6.webp"></div>
+                            <div class="info">
+                                <div class="t">【小魂】明月天涯</div>
+                                <p class="up">up主：_小魂_</p>
+                                <p class="play">播放：29027</p>
+                            </div></a></div>
+                </li>
+            </ul>
+            <div class="prev">昨日</div><div class="next">一周</div></div>
+    </div>
+</div>
+<div class="div2">
+    <div class="div2-l">
+        <div class="div2-t">
+            <span class="stu"></span>
+            <span class="szi"><h2>推广</h2></span>
+            <a href="">TGS 2016要发车了！</a>
+        </div>
+        <div class="div2-b">
+            <ul class="div2-ul">
+                <li class="div2-li" id="pov1">
+                    <div class="div2-div">
+                        <a href="" title="脑洞即正义！最神评论上头条" class="a1"><img src="img/tupian1.webp" alt=""/></a>
+                        <a href="" title="脑洞即正义！最神评论上头条"><div class="t">脑洞即正义！最神评论上头条</div></a>
+                    </div>
+                </li>
+                <li class="div2-li" id="pov2">
+                    <div class="div2-div">
+                        <a href="" title="【水彩过程】这次是萝莉控和兽耳控的福利" class="a1"><img src="img/tupian2.webp" alt=""/></a>
+                        <a href="" title="【水彩过程】这次是萝莉控和兽耳控的福利"><div class="t">【水彩过程】这次是萝莉控和兽耳控的福利</div></a>
+                    </div>
+                </li>
+                <li class="div2-li" id="pov3">
+                    <div class="div2-div">
+                        <a href="" title="【王境泽】当变形记配上西游记" class="a1"><img src="img/tupian3.webp" alt=""/></a>
+                        <a href="" title="【王境泽】当变形记配上西游记"><div class="t">【王境泽】当变形记配上西游记</div></a>
+                    </div>
+                </li>
+                <li class="div2-li" id="pov4">
+                    <div class="div2-div">
+                        <a href="" title="Fate/Magia" class="a1"><img src="img/tupian4.webp" alt=""/></a>
+                        <a href="" title="Fate/Magia"><div class="t">Fate/Magia</div></a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <div class="ov-box" id="ov1">
+                <div class="ov">
+                    <div class="ov-t">脑洞即正义！最神评论上头条</div>
+                    <div class="ov1">
+                        <span class="span1">黑暗的大坑</span>
+                        <span class="span2"></span>
+                        <span class="span3">2016-08-25 15:55</span>
+                    </div>
+                    <div class="ov2"><img src="img/tupian1.webp"><p class="txt">脑洞即正义！最神评论赢Thinkpad各种奖品！</p></div>
+                    <div class="ov3">
+                        <span class="span4"><i class="si1"></i>1.7万</span>
+                        <span class="span4"><i class="si2"></i>303</span>
+                        <span class="span4"><i class="si3"></i>51</span>
+                        <span class="span4"><i class="si4"></i>40</span>
+                    </div>
+                </div>
+            </div>
+            <div class="ov-box" id="ov2">
+                <div class="ov">
+                    <div class="ov-t">脑洞即正义！最神评论上头条</div>
+                    <div class="ov1">
+                        <span class="span1">黑暗的大坑</span>
+                        <span class="span2"></span>
+                        <span class="span3">2016-08-25 15:55</span>
+                    </div>
+                    <div class="ov2"><img src="img/tupian2.webp"><p class="txt">脑洞即正义！最神评论赢Thinkpad各种奖品！</p></div>
+                    <div class="ov3">
+                        <span class="span4"><i class="si1"></i>1.7万</span>
+                        <span class="span4"><i class="si2"></i>303</span>
+                        <span class="span4"><i class="si3"></i>51</span>
+                        <span class="span4"><i class="si4"></i>40</span>
+                    </div>
+                </div>
+            </div>
+            <div class="ov-box" id="ov3">
+                <div class="ov">
+                    <div class="ov-t">脑洞即正义！最神评论上头条</div>
+                    <div class="ov1">
+                        <span class="span1">黑暗的大坑</span>
+                        <span class="span2"></span>
+                        <span class="span3">2016-08-25 15:55</span>
+                    </div>
+                    <div class="ov2"><img src="img/tupian3.webp"><p class="txt">脑洞即正义！最神评论赢Thinkpad各种奖品！</p></div>
+                    <div class="ov3">
+                        <span class="span4"><i class="si1"></i>1.7万</span>
+                        <span class="span4"><i class="si2"></i>303</span>
+                        <span class="span4"><i class="si3"></i>51</span>
+                        <span class="span4"><i class="si4"></i>40</span>
+                    </div>
+                </div>
+            </div>
+            <div class="ov-box" id="ov4">
+                <div class="ov">
+                    <div class="ov-t">脑洞即正义！最神评论上头条</div>
+                    <div class="ov1">
+                        <span class="span1">黑暗的大坑</span>
+                        <span class="span2"></span>
+                        <span class="span3">2016-08-25 15:55</span>
+                    </div>
+                    <div class="ov2"><img src="img/tupian4.webp"><p class="txt">脑洞即正义！最神评论赢Thinkpad各种奖品！</p></div>
+                    <div class="ov3">
+                        <span class="span4"><i class="si1"></i>1.7万</span>
+                        <span class="span4"><i class="si2"></i>303</span>
+                        <span class="span4"><i class="si3"></i>51</span>
+                        <span class="span4"><i class="si4"></i>40</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="div2-r">
+        <div class="div2-t">
+            <span class="div2-s"><a href="">在线人数：173778</a></span>
+            <i></i>
+            <span class="div2-s"><a href="">最新投稿：1186</a></span>
+        </div>
+        <div class="div2-b">
+            <div>
+                <a href=""><img src="img/aa.jpg" alt=""/></a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="div3">
+    <div class="div3-l">
+        <div class="div3-t">
+            <div style="float: left">
+                <span class="d3i"></span>
+                <span class="d3t"><a href=""><h2>正在直播</h2></a></span>
+                <span class="d3s">当前共有<em>2141</em>个在线直播</span>
+            </div>
+            <div style="float: right"><div class="d3m"><a href="">更多></a></div></div>
+        </div>
+        <div class="div3-b">
+
+        </div>
+    </div>
+    <div class="div3-r">
+        <div class="div3-t">
+            <ul>
+                <li><span class="div3-ts">直播排行</span></li>
+                <li><span class="div3-ts">关注的主播</span></li>
+                <li class="on"><span class="div3-ts">为你推荐</span></li>
+            </ul>
+        </div>
+        <div class="div3-b">
+            <div class="r-list-body" style="overflow: hidden;">
+                <div class="r-list-wrapper" style="width: 200%; margin-left: -100%;">
+                    <ul class="r-list-live" style="display: none;">
+                        <li><div class="r-item r-ranking"><div class="lv-num n1">1</div><a class="preview" href="" title="宫本·狗雨"><img data-img="http://i1.hdslb.com/bfs/face/2c0799d5e65a56668944d3807405663620b720a3.jpg" src="http://static.hdslb.com/images/transparent.gif"></a><a href="" title="宫本·狗雨"><div class="r-i"><p class="r-i-t"><span class="u-name">宫本·狗雨</span><span class="u-online"><i class="b-icon b-icon-live-online"></i><em>1.4万</em></span></p><div class="r-i-st" title="(๑•̀ㅂ•́)و✧直播世界总决赛（30号）">(๑•̀ㅂ•́)و✧直播世界总决赛（30号）</div></div></a></div></li>
+                        <li><div class="r-item r-ranking"><div class="lv-num n2">2</div><a class="preview" href="" title="黑桐谷歌"><img data-img="http://i2.hdslb.com/bfs/face/dabaa4acebb590fa13be1b377c0614a098554ebe.jpg" src="http://static.hdslb.com/images/transparent.gif"></a><a href="" title="黑桐谷歌"><div class="r-i"><p class="r-i-t"><span class="u-name">黑桐谷歌</span><span class="u-online"><i class="b-icon b-icon-live-online"></i><em>7608</em></span></p><div class="r-i-st" title="今晚7点 ALAN WAKE大结局">今晚7点 ALAN WAKE大结局</div></div></a></div></li>
+                        <li><div class="r-item r-ranking"><div class="lv-num n3">3</div><a class="preview" href="" title="AnKe-Poi"><img data-img="http://i0.hdslb.com/bfs/face/ae8aea930b21e86a83313dd3ad12cd8192e8bf49.jpg" src="http://static.hdslb.com/images/transparent.gif"></a><a href="" title="AnKe-Poi"><div class="r-i"><p class="r-i-t"><span class="u-name">AnKe-Poi</span><span class="u-online"><i class="b-icon b-icon-live-online"></i><em>7419</em></span></p><div class="r-i-st" title="守望先锋 我在哪?谁在打我?晚饭吃什么?">守望先锋 我在哪?谁在打我?晚饭吃什么?</div></div></a></div></li>
+                        <li><div class="r-item r-ranking"><div class="lv-num n4">4</div><a class="preview" href="" title="奈さま"><img data-img="http://i0.hdslb.com/bfs/face/47a917d949c3355adc977908e6cd4ac72d1737d5.jpg" src="http://static.hdslb.com/images/transparent.gif"></a><a href="" title="奈さま"><div class="r-i"><p class="r-i-t"><span class="u-name">奈さま</span><span class="u-online"><i class="b-icon b-icon-live-online"></i><em>7109</em></span></p><div class="r-i-st" title="游戏名：黎明杀机。走过路过不要错过。">游戏名：黎明杀机。走过路过不要错过。</div></div></a></div></li>
+                        <li><div class="r-item r-ranking"><div class="lv-num n5">5</div><a class="preview" href="" title="心暖西瓜君"><img data-img="http://i0.hdslb.com/bfs/face/5057877d829c44c0f63d9e416b3d3eedb79d9d9d.gif" src="http://static.hdslb.com/images/transparent.gif"></a><a href="" title="心暖西瓜君"><div class="r-i"><p class="r-i-t"><span class="u-name">心暖西瓜君</span><span class="u-online"><i class="b-icon b-icon-live-online"></i><em>6472</em></span></p><div class="r-i-st" title="心卵：今晚9点尝试一下睡觉水">心卵：今晚9点尝试一下睡觉水</div></div></a></div></li>
+                        <li><div class="r-item r-ranking"><div class="lv-num n6">6</div><a class="preview" href="" title="痒局长"><img data-img="http://i2.hdslb.com/bfs/face/bcdf640faa16ebaacea1d4c930baabaec9087a80.jpg" src="http://static.hdslb.com/images/transparent.gif"></a><a href="" title="痒局长"><div class="r-i"><p class="r-i-t"><span class="u-name">痒局长</span><span class="u-online"><i class="b-icon b-icon-live-online"></i><em>6468</em></span></p><div class="r-i-st" title="还是屁股好">还是屁股好</div></div></a></div></li></ul>
+                    <ul class="r-list-live" style="display: block;"><li class="no-data"><span>没有数据</span></li></ul>
+                    <ul class="r-list-live" style="display: block;"><li class="live-pmt-item"><a class="preview" href="" title="海上升明月，天涯共此时，月饼新鲜上线~"><img data-simg="http://i0.hdslb.com/bfs/live/9d50df72eacef60b314724e64303fdd3ec306a69.jpg" data-limg="http://i0.hdslb.com/bfs/live/9d50df72eacef60b314724e64303fdd3ec306a69.jpg" data-img="" src="http://i0.hdslb.com/bfs/live/9d50df72eacef60b314724e64303fdd3ec306a69.jpg@.webp" loaded="loaded" alt="海上升明月，天涯共此时，月饼新鲜上线~" style="opacity: 1;"><div class="t">海上升明月，天涯共此时，月饼新鲜上线~</div></a></li></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</body>
+</html>
